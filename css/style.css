@@ -107,7 +107,7 @@ body {
 @media screen and (max-width: 512px) {
 	.profile-image img {
 		position: absolute;
-		top: 25%;
+		top: 20%;
 		left: 20%;
 	}
 	.sidebar {
@@ -115,7 +115,7 @@ body {
 	}
 	.introduction {
 		position: absolute;
-		top: 55%;
+		top: 60%;
 		left: 18%;
 	}
 }
