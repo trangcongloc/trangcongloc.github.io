@@ -12,38 +12,18 @@ body {
 	color: white;
 	background-color: #181818;
 }
-
-.introduction,
-.button {
+.loader-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
 }
-.introduction {
-	margin-top: 5%;
-}
-.skills {
-	font-size: 1em;
-	opacity: 0.5;
+.loader-wrapper h1 {
+	animation: outext 1s ease-in-out;
 }
 
-.button {
-	flex-direction: row;
-	justify-content: space-around;
-	margin: 15%;
-}
-.question {
-	font-size: 3em;
-}
-.but-hover a {
-	padding: 15px 30px;
-	border: 1.5px solid white;
-	text-decoration: none;
-	color: white;
-	background-color: #181818;
-}
-.but-hover:hover {
-	opacity: 0;
-}
+#keyframes;
