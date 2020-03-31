@@ -131,7 +131,6 @@ body {
 }
 .loader-wrapper p {
 	margin-top: 25px;
-	color: white;
 	animation: loader-loading 3s ease infinite;
 }
 .loader {
