@@ -6,36 +6,33 @@
 	padding: 0;
 }
 body {
+	width: 100%;
+	height: 100%;
 	font-family: "Nunito Sans", sans-serif;
 	font-size: 18px;
+	background: linear-gradient(to top right, #080808, #161616) no-repeat;
 }
 
 /* ? page */
-.page {
+.homepage,
+.aboutpage,
+.skillspage,
+.contactpage,
+.workspage {
 	cursor: default;
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(to top left, #080808, #161616);
-	/* background-size: cover; */
+	background: linear-gradient(to top right, #080808, #161616) no-repeat;
 }
 
-/* ? image-box */
-.image-box {
-	position: absolute;
-	top: 30%;
-	right: 15%;
-}
-.image-box {
-	display: none;
-}
-/* ? content-box */
 .content-box {
 	position: absolute;
 	top: 40%;
 	left: 25%;
+	width: 30%;
 	color: white;
 }
 .content-box h1 {
@@ -67,7 +64,9 @@ body {
 	color: #202020;
 	background-color: #00e5b0;
 }
-
+.hidden {
+	display: none;
+}
 /* ? Sidebar */
 .sidebar {
 	position: absolute;
@@ -82,15 +81,12 @@ body {
 	align-items: center;
 }
 .logo {
-	padding: 5px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding: 10px 0px;
 	width: 60px;
 	height: auto;
-}
-.logo:hover {
-	animation: logotate 2s ease-out forwards;
 }
 .nav {
 	display: flex;
@@ -231,22 +227,24 @@ body {
 		font-size: 1em;
 	}
 }
-@keyframes logotate {
-	0% {
-		transform: rotate(0deg);
-	}
-	50% {
-		transform: rotate(380deg);
-	}
-	75% {
-		transform: rotate(340deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
 @media screen and (max-width: 720px) {
+	.homepage {
+		cursor: default;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-image: linear-gradient(to bottom, #080808, #161616);
+		/* background-size: cover; */
+	}
+	.content-box {
+		position: absolute;
+		top: 40%;
+		left: 25%;
+		width: 50%;
+		color: white;
+	}
 	.sidebar {
 		position: absolute;
 		top: 0;
