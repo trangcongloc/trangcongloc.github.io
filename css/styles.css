@@ -12,6 +12,7 @@ body {
 
 /* ? page */
 .page {
+	cursor: default;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -37,16 +38,15 @@ body {
 	left: 25%;
 	color: white;
 }
-.social::before {
-	content: "";
-}
-.social.animated::before {
-	content: "";
-	animation: anisocial 5s ease infinite;
-}
 .content-box h1 {
 	font-weight: 800;
 	font-size: 2em;
+}
+.author-box {
+	animation: authorOut 1s ease-in forwards;
+}
+.author-box:hover {
+	animation: authorIn 1s ease-out forwards;
 }
 .content-box h2 {
 	margin: 5px 0px;
@@ -110,9 +110,10 @@ body {
 .non-select {
 	color: white;
 	opacity: 0.5;
+	animation: hovOut 1s ease forwards;
 }
 .non-select:hover {
-	animation: hovin 1s ease forwards;
+	animation: hovIn 0.5s ease forwards;
 }
 
 /* ? loader-wrapper  */
@@ -131,13 +132,33 @@ body {
 }
 .loader-wrapper p {
 	margin-top: 25px;
-	animation: loader-loading 3s ease infinite !important;
+	animation: loaderLoading 3s ease infinite !important;
 }
 .loader {
 	width: 50px;
 	height: 50px;
 	border: 0px solid white;
 	animation: loader 3s ease infinite !important;
+}
+@keyframes authorIn {
+	from {
+		color: white;
+		font-size: 1em;
+	}
+	to {
+		color: #00e5b0;
+		font-size: 1.1em;
+	}
+}
+@keyframes authorOut {
+	from {
+		color: #00e5b0;
+		font-size: 1.1em;
+	}
+	to {
+		color: white;
+		font-size: 1em;
+	}
 }
 @keyframes loader {
 	0% {
@@ -164,7 +185,7 @@ body {
 	}
 }
 
-@keyframes loader-loading {
+@keyframes loaderLoading {
 	0% {
 		opacity: 0;
 		color: white;
@@ -186,7 +207,7 @@ body {
 		color: white;
 	}
 }
-@keyframes hovin {
+@keyframes hovIn {
 	from {
 		opacity: 0.5;
 		color: white;
@@ -196,6 +217,18 @@ body {
 		opacity: 1;
 		color: #00e5b0;
 		font-size: 1.5em;
+	}
+}
+@keyframes hovOut {
+	from {
+		opacity: 1;
+		color: #00e5b0;
+		font-size: 1.5em;
+	}
+	to {
+		opacity: 0.5;
+		color: white;
+		font-size: 1em;
 	}
 }
 @keyframes logotate {
@@ -210,29 +243,6 @@ body {
 	}
 	100% {
 		transform: rotate(360deg);
-	}
-}
-
-@keyframes anisocial {
-	0% {
-		content: "instagram/";
-		color: #dd2a7b;
-	}
-	25% {
-		content: "facebook/";
-		color: #3b5998;
-	}
-	50% {
-		content: "twitter/";
-		color: #08a0e9;
-	}
-	75% {
-		content: "github/";
-		color: #f1502f;
-	}
-	100% {
-		content: "instagram/";
-		color: #dd2a7b;
 	}
 }
 
@@ -252,7 +262,6 @@ body {
 	.nav {
 		display: flex;
 		flex-direction: row;
-		text-align: center;
 	}
 	.nav a {
 		margin: 0px 12.5px;

@@ -4,7 +4,4 @@ $(function() {
 			.delay(1000)
 			.fadeOut(700);
 	});
-	// $(".content-box").click(function() {
-	// 	$(".social").toggleClass("animated");
-	// });
 });
