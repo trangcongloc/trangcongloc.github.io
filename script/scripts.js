@@ -2,16 +2,14 @@ $(function() {
 	$(window).on("load", function() {
 		$(".loader-wrapper")
 			.delay(1000)
-			.fadeOut(700);
+			.fadeOut("slow");
 	});
 	$(".btn").click(function() {
 		$(".selected")
 			.removeClass("selected")
-			.delay(300)
 			.addClass("non-select");
 		$(this)
 			.addClass("selected")
-			.delay(300)
 			.removeClass("non-select");
 	});
 	// ? About Me Button
@@ -20,6 +18,12 @@ $(function() {
 			.show()
 			.delay(1000)
 			.fadeOut("slow");
+		$(".btn.about")
+			.removeClass("non-select")
+			.addClass("selected");
+		$(".btn.home")
+			.removeClass("selected")
+			.addClass("non-select");
 		$(".aboutpage").show();
 		$(".skillspage").hide();
 		$(".homepage").hide();
