@@ -11,11 +11,11 @@ body {
 }
 
 /* ? page */
-.homepage,
-.aboutpage,
-.skillspage,
-.contactpage,
-.workspage {
+.home-page,
+.about-page,
+.skills-page,
+.contact-page,
+.works-page {
 	cursor: default;
 	position: absolute;
 	top: 0;
@@ -225,7 +225,11 @@ body {
 	}
 }
 @media screen and (max-width: 720px) {
-	.homepage {
+	.home-page,
+	.about-page,
+	.skills-page,
+	.contact-page,
+	.works-page {
 		cursor: default;
 		position: absolute;
 		top: 0;
@@ -233,7 +237,6 @@ body {
 		height: 100%;
 		width: 100%;
 		background-image: linear-gradient(to bottom, #080808, #161616);
-		/* background-size: cover; */
 	}
 	.content-box {
 		position: absolute;

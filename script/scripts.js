@@ -18,81 +18,81 @@ $(function() {
 			.show()
 			.delay(1000)
 			.fadeOut("slow");
-		$(".btn.about")
+		$(".btn-about")
 			.removeClass("non-select")
 			.addClass("selected");
-		$(".btn.home")
+		$(".btn-home")
 			.removeClass("selected")
 			.addClass("non-select");
-		$(".aboutpage").show();
-		$(".skillspage").hide();
-		$(".homepage").hide();
-		$(".workspage").hide();
-		$(".contactpage").hide();
+		$(".about-page").show();
+		$(".skills-page").hide();
+		$(".home-page").hide();
+		$(".works-page").hide();
+		$(".contact-page").hide();
 	});
 
 	// ? Skills nav
-	$(".btn.skills").click(function() {
+	$(".btn-skills").click(function() {
 		$(".loader-wrapper")
 			.show()
 			.delay(1000)
 			.fadeOut("slow");
-		$(".skillspage").show();
-		$(".aboutpage").hide();
-		$(".homepage").hide();
-		$(".workspage").hide();
-		$(".contactpage").hide();
+		$(".skills-page").show();
+		$(".about-page").hide();
+		$(".home-page").hide();
+		$(".works-page").hide();
+		$(".contact-page").hide();
 	});
 
 	// ? About nav
-	$(".btn.about").click(function() {
+	$(".btn-about").click(function() {
 		$(".loader-wrapper")
 			.show()
 			.delay(1000)
 			.fadeOut("slow");
-		$(".aboutpage").show();
-		$(".skillspage").hide();
-		$(".homepage").hide();
-		$(".workspage").hide();
-		$(".contactpage").hide();
+		$(".about-page").show();
+		$(".skills-page").hide();
+		$(".home-page").hide();
+		$(".works-page").hide();
+		$(".contact-page").hide();
 	});
 
 	// ? Home nav
-	$(".btn.home").click(function() {
+	$(".btn-home").click(function() {
 		$(".loader-wrapper")
 			.show()
 			.delay(1000)
 			.fadeOut("slow");
-		$(".homepage").show();
-		$(".skillspage").hide();
-		$(".aboutpage").hide();
-		$(".workspage").hide();
-		$(".contactpage").hide();
+		$(".home-page").show();
+		$(".skills-page").hide();
+		$(".about-page").hide();
+		$(".works-page").hide();
+		$(".contact-page").hide();
 	});
 
 	// ? Works nav
-	$(".btn.works").click(function() {
+	$(".btn-works").click(function() {
 		$(".loader-wrapper")
 			.show()
 			.delay(1000)
 			.fadeOut("slow");
-		$(".workspage").show();
-		$(".skillspage").hide();
-		$(".homepage").hide();
-		$(".aboutpage").hide();
-		$(".contactpage").hide();
+		$(".works-page").show();
+		$(".skills-page").hide();
+		$(".home-page").hide();
+		$(".about-page").hide();
+		$(".contact-page").hide();
 	});
 
 	// ? Contact nav
-	$(".btn.contact").click(function() {
+	$(".btn-contact").click(function() {
 		$(".loader-wrapper")
 			.show()
 			.delay(1000)
 			.fadeOut("slow");
-		$(".contactpage").show();
-		$(".skillspage").hide();
-		$(".homepage").hide();
-		$(".workspage").hide();
-		$(".aboutpage").hide();
+		$(".contact-page").show();
+		$(".skills-page").hide();
+		$(".home-page").hide();
+		$(".works-page").hide();
+		$(".about-page").hide();
 	});
 });
